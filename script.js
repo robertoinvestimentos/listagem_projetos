@@ -1,16 +1,23 @@
 // Array de objetos representando os projetos
 const projects = [
     {
+        title: "Loto Rede Social",
+        description: "A proposta da <strong>Loto - Rede Social</strong> integrada ao site <a href='https://lotodicas.com.br/'>LotoDicas</a> é proporcionar aos usuários um ambiente de interação especializado em apostas, centrado em um chat intuitivo. Com funcionalidades de login e senha, os usuários podem se cadastrar em grupos de conversas específicas, criando uma comunidade envolvente e focada no compartilhamento de estratégias e dicas relacionadas ao campo de apostas. Essa plataforma busca unir entusiastas da loteria, proporcionando um espaço colaborativo para discutir estratégias, trocar experiências e fortalecer a comunidade de jogadores.",
+        completion: 5, // Porcentagem de conclusão
+        link: "https://lotodicas.netlify.app/",
+        image: "/assets/imgs/projetos/lotosocial.jpg"
+    },
+    {
         title: "Relógio em Tempo Real com Horário de Brasília",
         description: "O projeto <strong>Relógio em Tempo Real com Horário de Brasília</strong> propõe a criação de um site interativo e responsivo, destacando-se pela precisão e atualização em tempo real do horário de Brasília. Além de oferecer uma experiência de usuário atraente e intuitiva, o projeto incluirá funcionalidades como visualização de fusos horários adicionais, um modo noturno para otimizar a legibilidade durante a noite, opções de personalização de design e suporte multilíngue. Com foco na praticidade e estética, o site busca atender às necessidades de usuários que buscam uma ferramenta confiável para acompanhar o horário de Brasília e de outras regiões relevantes globalmente.",
-        completion: 77, // Porcentagem de conclusão
+        completion: 87, // Porcentagem de conclusão
         link: "https://relogio-brasilia.netlify.app/",
         image: "/assets/imgs/projetos/relogio.jpg"
     },
     {
         title: "Cronômetro Online Multifuncional",
         description: "O projeto de <strong>Cronômetro Online Multifuncional</strong> propõe a criação de uma plataforma versátil que vai além da simples contagem de tempo. Este cronômetro integrado incluirá funcionalidades adicionais, como temporizador, despertador e relógio, proporcionando uma solução abrangente para as necessidades temporais dos usuários. Com uma interface intuitiva e de fácil navegação, os usuários poderão alternar entre as diferentes funções de forma eficiente, tornando-se uma ferramenta prática e completa para gerenciar o tempo em diversas situações do cotidiano.",
-        completion: 48, // Porcentagem de conclusão
+        completion: 55, // Porcentagem de conclusão
         link: "https://super-cronometro.netlify.app/",
         image: "/assets/imgs/projetos/cronometro.jpg"
     },
@@ -28,13 +35,7 @@ const projects = [
         link: "https://impostometro-brasil.netlify.app/",
         image: "/assets/imgs/projetos/impostometro.jpg"
     },
-    {
-        title: "Loto Rede Social",
-        description: "A proposta da <strong>Loto - Rede Social Simples</strong> integrada ao site <a href='https://lotodicas.com.br/'>LotoDicas</a> é proporcionar aos usuários um ambiente de interação especializado em apostas, centrado em um chat intuitivo. Com funcionalidades de login e senha, os usuários podem se cadastrar em grupos de conversas específicas, criando uma comunidade envolvente e focada no compartilhamento de estratégias e dicas relacionadas ao campo de apostas. Essa plataforma busca unir entusiastas da loteria, proporcionando um espaço colaborativo para discutir estratégias, trocar experiências e fortalecer a comunidade de jogadores.",
-        completion: 1, // Porcentagem de conclusão
-        link: "#",
-        image: "/assets/imgs/projetos/lotosocial.jpg"
-    },
+
     // Adicione mais projetos conforme necessário
 ];
 
