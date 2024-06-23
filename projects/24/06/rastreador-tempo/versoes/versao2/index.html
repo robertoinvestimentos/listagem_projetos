@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popunder Example</title>
+<!-- Link para a última versão do Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        padding: 50px;
+        text-align: center;
+    }
+
+    header {
+        margin-bottom: 20px; /* Aumenta a margem entre o header e o conteúdo */
+    }
+
+    #popunderBtn {
+        margin: 20px auto; /* Aumenta a margem entre o botão e o logo */
+        color: rgba(0, 0, 0, 0.9);
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        display: inline;
+        box-sizing: border-box;
+        padding: 0.4rem 1.2rem;
+        margin: 0;
+        text-align: center;
+        border-radius: 3px;
+        border: 1px solid #bf942a;
+        box-shadow: inset 0 1px 0 0 rgb(255, 255, 255);
+        background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .popunder {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent; /* Remove a cor de fundo do popunder */
+        z-index: 9999;
+        max-width: 450px; /* Limita o tamanho do popunder em 450px */
+        width: 100%; /* Garante que o popunder não ultrapasse a largura máxima */
+    }
+
+    .popunder-video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ajusta o tamanho do vídeo para caber no espaço */
+    }
+
+    .popunder-close {
+        position: absolute;
+        top: 10px; /* Posiciona o botão de fechar no topo do vídeo */
+        right: 10px; /* Posiciona o botão de fechar à direita do vídeo */
+        cursor: pointer;
+        z-index: 999; /* Garante que o botão de fechar esteja acima do vídeo */
+        font-size: 24px; /* Aumenta o tamanho do ícone */
+        color: rgba(255, 255, 255, 0.9); /* Cor do ícone */
+    }
+</style>
+<!-- Adiciona o favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<header>
+    <a id="logo" href="/">
+        <img width="114.467px" height="24px" src="logo3.png" alt="Lotodicas">
+    </a>
+</header>
+
+<!-- Botão que mostra o popunder -->
+<button id="popunderBtn" class="btn btn-primary">Simular</button>
+
+<!-- Popunder -->
+<div id="popunder" class="popunder">
+    <!-- Player de vídeo HTML5 -->
+    <video class="popunder-video" controls>
+        <source src="publicidade.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <span class="popunder-close" onclick="closePopunder()">
+        <!-- Ícone de fechar -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+    </span>
+</div>
+
+<!-- Script para mostrar/fechar o popunder -->
+<script>
+    function showPopunder() {
+        document.getElementById('popunder').style.display = 'block';
+    }
+
+    function closePopunder() {
+        document.getElementById('popunder').style.display = 'none';
+    }
+
+    document.getElementById('popunderBtn').addEventListener('click', showPopunder);
+</script>
+
+</body>
+</html>
