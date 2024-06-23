@@ -15,30 +15,18 @@
     </style>
 </head>
 <body>
-    <div id="teste"></div>
     <div class="container">
-        <h1 class="text-center">Rastreador de Tempo</h1>
-        <div class="row">
-            <!-- Adicione colunas para cada dia -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title" id="day-01">1</h5>
-                        <p class="card-text" id="value-01"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Repita para outros dias -->
-            <!-- Exemplo: -->
-            <!-- <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title" id="day-02">2</h5>
-                            <p class="card-text" id="value-02"></p>
-                        </div>
-                    </div>
-                </div> -->
-        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Tempo (minutos)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- As linhas serão inseridas aqui pelo JavaScript -->
+            </tbody>
+        </table>        
     </div>
 
     <!-- Importando Bootstrap JS e o seu arquivo rastreador.js -->
