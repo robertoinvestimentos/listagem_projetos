@@ -11,9 +11,9 @@ function formatarDatas(objeto) {
 }
 
 // Chama a função para formatar os dados
-const dados = formatarDatas(dados);
+const dadosFormatados = formatarDatas(dados);
 
 // Exemplo de uso dos dados formatados
-console.log(dados);
+console.log(dadosFormatados);
 
-export {dados};
+export {dadosFormatados}
