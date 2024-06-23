@@ -1,3 +1,6 @@
+const nameProject = 'Rastreador de Tempo';
+
+
 const versoes = [
   {
     titulo: 'Versão 1',
