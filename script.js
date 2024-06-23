@@ -54,7 +54,7 @@ const projects = [
         "description": "O <strong>Sistema de Atualização de Resultados de Loterias</strong> é uma plataforma desenvolvida para automatizar o processo de atualização das informações de resultados de loterias no site da LotoDicas. Com esse sistema, é possível manter os dados sempre atualizados em tempo real, garantindo que os usuários tenham acesso às informações mais recentes sobre os sorteios das loterias. Além disso, o sistema oferece recursos de agendamento e notificação para facilitar a gestão e manutenção dos resultados.",
         "completion": 60, // Porcentagem de conclusão
         "link": "https://atualizacao-loterias.netlify.app/",
-        "image": "/assets/imgs/projetos/atualizacao_loterias.jpg"
+        "image": "/assets/imgs/projetos/atualizacao_loterias_caixa.jpg"
     },
     
     
