@@ -35,6 +35,14 @@ const projects = [
         link: "https://impostometro-brasil.netlify.app/",
         image: "/assets/imgs/projetos/impostometro.jpg"
     },
+    {
+        "title": "Rastreador de Tempo",
+        "description": "O <strong>Rastreador de Tempo de Trabalho</strong> oferece uma solução simples e eficiente para monitorar e reportar o tempo gasto em diferentes projetos. Este sistema permite registrar horas de trabalho de maneira precisa, facilitando a visualização do progresso e a comunicação do tempo dedicado a cada tarefa. Ele visa fornecer uma visão clara e detalhada do tempo investido em cada atividade, promovendo uma gestão de tempo mais eficaz e transparência para todas as partes envolvidas.",
+        "completion": 23, // Porcentagem de conclusão
+        "link": "https://rastreador-de-tempo.netlify.app/",
+        "image": "/assets/imgs/projetos/rastreador_tempo.jpg"
+    }
+    
 
     // Adicione mais projetos conforme necessário
 ];
