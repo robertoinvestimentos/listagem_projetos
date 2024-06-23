@@ -6,6 +6,17 @@ function getDiaSemana(dia){
     return diasSemana[data.getDay()];
 }
 
+function multiplicar(tempoMinutos) {
+    // Verifica se o tempo é válido (não nulo e maior que zero)
+    if (tempoMinutos !== null && tempoMinutos > 0) {
+        // Multiplica o tempo por 3
+        return tempoMinutos * 3;
+    } else {
+        // Retorna 0 se o tempo for inválido
+        return 0;
+    }
+}
+
 function converter(minutos) {
     const horas = Math.floor(minutos / 60);
     const minutosRestantes = minutos % 60;
