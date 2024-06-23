@@ -1,4 +1,4 @@
-import { dados } from './data.js';
+import { dados } from './formatarData.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     const tableBody = document.getElementById('tableBody');
