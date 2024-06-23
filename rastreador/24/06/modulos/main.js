@@ -6,7 +6,7 @@ function getDiaSemana(dia){
     return diasSemana[data.getDay()];
 }
 
-function converterMinutosParaHoras(minutos) {
+function converter(minutos) {
     const horas = Math.floor(minutos / 60);
     const minutosRestantes = minutos % 60;
     return `${horas}h ${minutosRestantes}min`;
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${dia < 10 ? '0' + dia : dia}/06/24 (${getDiaSemana(dia)})</td>
-            <td>${tempo !== null ? converterMinutosParaHoras(tempo) : '-'}</td>
+            <td>${tempo !== null ? converter(tempo) : '-'}</td>
 
         `;
         tableBody.appendChild(row);
