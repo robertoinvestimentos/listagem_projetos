@@ -1,7 +1,7 @@
-document.getElementsByClassName('teste').innerHTML = 'teste';
+document.getElementById('teste').innerHTML = 'teste';
 
 
-
+console.log('teste');
 // Importando o arquivo JSON
 import data from './rastreador_24_06.json';
 
