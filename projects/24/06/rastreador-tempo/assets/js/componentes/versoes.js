@@ -1,4 +1,6 @@
 const nameProject = 'Rastreador de Tempo';
+const descriptionProject = 'O Rastreador de Tempo de Trabalho oferece uma solução simples e eficiente para monitorar e reportar o tempo gasto em diferentes projetos.'
+
 
 
 const versoes = [
@@ -80,6 +82,10 @@ commits: [
     ]
   }
 ];
+
+document.querySelector('.titleProject').innerText = nameProject;
+document.querySelector('.descriptionProject').innerText = descriptionProject;
+document.title = nameProject;
 
 // Função para remover acentos de uma string
 function removerAcentos(str) {
