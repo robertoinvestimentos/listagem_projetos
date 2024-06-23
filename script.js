@@ -39,9 +39,17 @@ const projects = [
         "title": "Rastreador de Tempo",
         "description": "O <strong>Rastreador de Tempo de Trabalho</strong> oferece uma solução simples e eficiente para monitorar e reportar o tempo gasto em diferentes projetos. Este sistema permite registrar horas de trabalho de maneira precisa, facilitando a visualização do progresso e a comunicação do tempo dedicado a cada tarefa. Ele visa fornecer uma visão clara e detalhada do tempo investido em cada atividade, promovendo uma gestão de tempo mais eficaz e transparência para todas as partes envolvidas.",
         "completion": 23, // Porcentagem de conclusão
-        "link": "https://rastreador-de-tempo.netlify.app/",
+        "link": "projects/24/06/rastreador-tempo",
         "image": "/assets/imgs/projetos/rastreador_tempo.jpg"
+    },
+    {
+        "title": "Script de Publicidade de Recompensa",
+        "description": "O <strong>Script de Publicidade de Recompensa</strong> é uma ferramenta inovadora que permite aos usuários visualizar anúncios em troca de recompensas oferecidas pelo site. Este sistema incentiva o engajamento do usuário, ao mesmo tempo que gera receita publicitária. A cada anúncio assistido, o usuário é recompensado com benefícios específicos, promovendo uma experiência interativa e vantajosa tanto para o site quanto para seus visitantes.",
+        "completion": 45, // Porcentagem de conclusão
+        "link": "https://publicidade-recompensa.netlify.app/",
+        "image": "/assets/imgs/projetos/publicidade_recompensa.jpg"
     }
+    
     
 
     // Adicione mais projetos conforme necessário
