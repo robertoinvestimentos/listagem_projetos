@@ -5,15 +5,11 @@ function exibirMensagem(mensagem) {
     messageElement.classList.remove('d-none');
 }
 
-// Função para carregar dados com base no mês selecionado
 function carregarDados() {
     const selectBox = document.getElementById('selectMonth');
-    const selectedMonth = selectBox.value; // Valor selecionado pelo usuário
-
-    // Lógica para carregar os dados do arquivo correspondente
-    import(`dados/data_${selectedMonth}.js`).then(module => {
-        const dados = module.dados; // Dados carregados do arquivo
-        // Lógica para processar e exibir os dados conforme necessário
+    const selectedMonth = selectBox.value;
+    import(`../dados/data_${selectedMonth}.js`).then(module => {
+        const dados = module.dados;
         processarDados(dados, selectedMonth);
     }).catch(error => {
         console.error('Erro ao carregar dados:', error);
