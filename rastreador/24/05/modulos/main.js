@@ -10,6 +10,7 @@ function carregarDados() {
         processarDados(dados);
     }).catch(error => {
         console.error('Erro ao carregar dados:', error);
+        document.getElementById('error').innerHTML = error;
     });
 }
 
