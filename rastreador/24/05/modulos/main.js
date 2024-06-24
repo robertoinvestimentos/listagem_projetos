@@ -5,7 +5,6 @@ function exibirMensagem(mensagem) {
     messageElement.classList.remove('d-none');
 }
 
-
 // Função para carregar dados com base no mês selecionado
 function carregarDados() {
     const selectBox = document.getElementById('selectMonth');
@@ -15,18 +14,26 @@ function carregarDados() {
     import(`./data_${selectedMonth}.js`).then(module => {
         const dados = module.dados; // Dados carregados do arquivo
         // Lógica para processar e exibir os dados conforme necessário
-        processarDados(dados);
+        processarDados(dados, selectedMonth);
     }).catch(error => {
         console.error('Erro ao carregar dados:', error);
-        console.log('teste error');
-        document.getElementById('error').innerHTML = `<spam>erro ao carregar os dados de rastreio de horas referente a <strong>${selectedMonth}</strong></spam>`;
+        exibirMensagem(`Não existem dados do mês de <strong>${selectedMonth}</strong> para mostrar`);
     });
 }
 
 // Função para processar e exibir os dados
-function processarDados(dados) {
+function processarDados(dados, mes) {
     const tableBody = document.getElementById('tableBody');
     tableBody.innerHTML = ''; // Limpar a tabela antes de adicionar novos dados
+    const messageElement = document.getElementById('message');
+    messageElement.innerHTML = ''; // Limpar mensagem de erro anterior
+    messageElement.classList.add('d-none'); // Esconder mensagem de erro anterior
+
+    if (Object.keys(dados).length === 0) {
+        exibirMensagem(`Não existem dados do mês de <strong>${mes}</strong> para mostrar`);
+        return;
+    }
+
     let tempoTotal = 0;
     let diasContados = 0;
 
