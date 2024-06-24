@@ -4,10 +4,12 @@
 .table td, .table th {
     vertical-align: middle;
     text-align: center;
+    border-right: 1px white solid;
 }
 .table thead th {
     background-color: #007bff; /* Cor de fundo azul */
     color: #fff; /* Texto branco */
+    border: 1px white solid;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
