@@ -9,6 +9,7 @@
 
 #selectMonth {
     display: block;
+    width: 150px;
     margin: 10px auto;
 }
 
