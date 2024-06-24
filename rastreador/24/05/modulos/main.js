@@ -10,7 +10,7 @@ function carregarDados() {
         processarDados(dados);
     }).catch(error => {
         console.error('Erro ao carregar dados:', error);
-        document.getElementById('error').innerHTML = error;
+        document.getElementById('error').innerHTML = `erro ao carregar os dados de rastreio de horas referente a <strong>${selectedMonth}</strong>`;
     });
 }
 
