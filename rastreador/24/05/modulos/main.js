@@ -1,3 +1,11 @@
+// Função para exibir uma mensagem
+function exibirMensagem(mensagem) {
+    const messageElement = document.getElementById('message');
+    messageElement.innerHTML = mensagem;
+    messageElement.classList.remove('d-none');
+}
+
+
 // Função para carregar dados com base no mês selecionado
 function carregarDados() {
     const selectBox = document.getElementById('selectMonth');
@@ -10,7 +18,8 @@ function carregarDados() {
         processarDados(dados);
     }).catch(error => {
         console.error('Erro ao carregar dados:', error);
-        document.getElementById('error').innerHTML = `erro ao carregar os dados de rastreio de horas referente a <strong>${selectedMonth}</strong>`;
+        console.log('teste error');
+        document.getElementById('error').innerHTML = `<spam>erro ao carregar os dados de rastreio de horas referente a <strong>${selectedMonth}</strong></spam>`;
     });
 }
 

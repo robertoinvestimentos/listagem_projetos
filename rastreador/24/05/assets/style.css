@@ -12,11 +12,7 @@
     width: 150px;
     margin: 10px auto;
 }
-#error {
-    width: 400px;
-    display: block;
-    margin: 10px auto;
-}
+
 
 .table td, .table th {
     vertical-align: middle;
