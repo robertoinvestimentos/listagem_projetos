@@ -1,28 +1,22 @@
-import { dados } from './data.js';
+// Função para carregar dados com base no mês selecionado
+function carregarDados() {
+    const selectBox = document.getElementById('selectMonth');
+    const selectedMonth = selectBox.value; // Valor selecionado pelo usuário
 
-function getDiaSemana(dia){
-    const diasSemana = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
-    const data = new Date(`2024-06-${dia}`);
-    return diasSemana[data.getDay()];
+    // Lógica para carregar os dados do arquivo correspondente
+    import(`./data_${selectedMonth}.js`).then(module => {
+        const dados = module.dados; // Dados carregados do arquivo
+        // Lógica para processar e exibir os dados conforme necessário
+        processarDados(dados);
+    }).catch(error => {
+        console.error('Erro ao carregar dados:', error);
+    });
 }
 
-function multiplicar(minutos) {
-      if (minutos !== null && minutos > 0) {
-         return minutos * 3;
-    } else {
-        return 0;
-    }
-}
-
-function converter(minutos) {
-    const horas = Math.floor(minutos / 60);
-    const minutosRestantes = minutos % 60;
-    const minutosFormatados = minutosRestantes.toFixed(0);
-    return `${horas}h ${minutosFormatados}min`;
-}
-
-document.addEventListener('DOMContentLoaded', function () {
+// Função para processar e exibir os dados
+function processarDados(dados) {
     const tableBody = document.getElementById('tableBody');
+    tableBody.innerHTML = ''; // Limpar a tabela antes de adicionar novos dados
     let tempoTotal = 0;
     let diasContados = 0;
 
@@ -41,4 +35,31 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
         tableBody.appendChild(row);
     });
-});
+}
+
+// Evento para acionar a função ao alterar a seleção do mês
+document.getElementById('selectMonth').addEventListener('change', carregarDados);
+
+// Chamando a função ao carregar a página para exibir o mês inicial
+document.addEventListener('DOMContentLoaded', carregarDados);
+
+function getDiaSemana(dia){
+    const diasSemana = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
+    const data = new Date(`2024-06-${dia}`);
+    return diasSemana[data.getDay()];
+}
+
+function multiplicar(minutos) {
+      if (minutos !== null && minutos > 0) {
+         return minutos * 3;
+    } else {
+        return 0;
+    }
+}
+
+function converter(minutos) {
+    const horas = Math.floor(minutos / 60);
+    const minutosRestantes = minutos % 60;
+    const minutosFormatados = Math.round(minutosRestantes);
+    return `${horas}h ${minutosFormatados}min`;
+}
