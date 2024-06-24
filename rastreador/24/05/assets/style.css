@@ -1,6 +1,17 @@
 .container {
     margin-top: 50px;
 }
+.logo {
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+#selectMonth {
+    display: block;
+    margin: 10px auto;
+}
+
 .table td, .table th {
     vertical-align: middle;
     text-align: center;
