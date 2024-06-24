@@ -23,16 +23,20 @@ function converter(minutos) {
 document.addEventListener('DOMContentLoaded', function () {
     const tableBody = document.getElementById('tableBody');
     let tempoTotal = 0;
+    let diasContados = 0;
 
     Object.entries(dados).forEach(([dia, tempo]) => {
         const tempoMultiplicado = multiplicar(tempo);
         tempoTotal += tempoMultiplicado;
+        diasContados++;
+        const media = tempoTotal / diasContados;
 
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${dia < 10 ? '0' + dia : dia}/06/24 (${getDiaSemana(dia)})</td>
             <td>${tempo !== null ? converter(tempoMultiplicado) : '-'}</td>
             <td>${converter(tempoTotal)}</td>
+            <td>${converter(media)}</td>
         `;
         tableBody.appendChild(row);
     });
