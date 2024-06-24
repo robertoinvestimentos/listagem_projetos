@@ -17,7 +17,8 @@ function multiplicar(minutos) {
 function converter(minutos) {
     const horas = Math.floor(minutos / 60);
     const minutosRestantes = minutos % 60;
-    return `${horas}h ${minutosRestantes}min`;
+    const minutosFormatados = minutosRestantes.toFixed(0);
+    return `${horas}h ${minutosFormatados}min`;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
