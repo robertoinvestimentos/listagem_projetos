@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <td>${dia < 10 ? '0' + dia : dia}/06/24 (${getDiaSemana(dia)})</td>
             <td>${tempo !== null ? converter(tempoMultiplicado) : '-'}</td>
             <td>${converter(tempoTotal)}</td>
-            <td>${converter(media)}</td>
+            <td class="destaqueLinhas">${converter(media)}</td>
         `;
         tableBody.appendChild(row);
     });
