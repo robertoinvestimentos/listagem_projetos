@@ -11,7 +11,7 @@ function carregarDados() {
     const selectedMonth = selectBox.value; // Valor selecionado pelo usuário
 
     // Lógica para carregar os dados do arquivo correspondente
-    import(`./data_${selectedMonth}.js`).then(module => {
+    import(`dados/data_${selectedMonth}.js`).then(module => {
         const dados = module.dados; // Dados carregados do arquivo
         // Lógica para processar e exibir os dados conforme necessário
         processarDados(dados, selectedMonth);
