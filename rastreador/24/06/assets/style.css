@@ -1,0 +1,25 @@
+.container {
+    margin-top: 50px;
+}
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+.table thead th {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Texto branco */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.1); /* Cor de fundo azul claro para linhas alternadas */
+}
+.col-media {
+    background-color: #005000 !important; /* Cor de fundo verde suave */
+    color: white;
+}
+.table tbody tr {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro para todas as linhas */
+}
+.destaqueLinhas {
+   background: #00800063 !important; 
+}
