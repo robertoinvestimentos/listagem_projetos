@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dayContainer.className = 'day-container';
 
         const dateElement = document.createElement('div');
-        dateElement.className = 'task-date';
+        dateElement.className = 'task-date btn btn-secondary';
         dateElement.textContent = date;
         dayContainer.appendChild(dateElement);
 
@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
             taskList.forEach(task => {
                 const taskItem = document.createElement('div');
                 taskItem.className = 'task-item';
-                taskItem.textContent = `- ${task}`;
+                taskItem.textContent = `<i class="bi bi-check2-square"></i> ${task}`;
                 dayContainer.appendChild(taskItem);
             });
         } else {
             const noTasks = document.createElement('div');
             noTasks.className = 'task-item';
-            noTasks.textContent = '- Nenhuma tarefa';
+            noTasks.textContent = '<i class="bi bi-check2-square"></i> Nenhuma tarefa';
             dayContainer.appendChild(noTasks);
         }
 
