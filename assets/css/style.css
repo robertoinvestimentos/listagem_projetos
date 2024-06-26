@@ -104,7 +104,7 @@ tr.dia-atual td {
     background: #13554f !important;
     color: white;
 }
-
+/*
 
 .day-container {
     border: 1px solid #ddd;
@@ -123,6 +123,33 @@ tr.dia-atual td {
     color: #7d7d7d;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.task-item {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: gray;
+}
+*/
+.day-container {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.task-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.project-title {
+    color: #7d7d7d;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .task-item {

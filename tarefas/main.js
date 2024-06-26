@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const collapseElement = document.createElement('div');
-            collapseElement.className = 'accordion-collapse collapse';
+            collapseElement.className = 'accordion-collapse collapse show'; // Adiciona 'show' para exibir por padrão
             dayContainer.appendChild(collapseElement);
 
             const projectsContainer = document.createElement('div');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectContainer.appendChild(projectTitle);
 
                 const projectCollapse = document.createElement('div');
-                projectCollapse.className = 'accordion-collapse collapse';
+                projectCollapse.className = 'accordion-collapse collapse show'; // Adiciona 'show' para exibir por padrão
                 projectContainer.appendChild(projectCollapse);
 
                 const taskListContainer = document.createElement('div');
