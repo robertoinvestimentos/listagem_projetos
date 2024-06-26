@@ -12,13 +12,13 @@ const tarefas = {
         ]
     },
     '26/06/24 - Qua': {
-        'Projeto C': [
-            { tarefa: 'estelizando tarefas', status: 'n' },
-            { tarefa: 'adicionar qual projeto está sendo trb', status: 'n' }
-        ],
-        'Projeto D': [
+        'Rastreador de Tarefas': [
+            { tarefa: 'estelizando tarefas', status: 'y' },
+            { tarefa: 'adicionar qual projeto está sendo trb', status: 'y' },
             { tarefa: 'add status de conclusão', status: 'y' },
-            { tarefa: 'esconder os cards de dias que não tem nenhuma tarefa', status: 'n' }
+            { tarefa: 'esconder os cards de dias que não tem nenhuma tarefa', status: 'y' },
+            {tarefa: 'inserir expandir/esconder informação no card de dia e projetos'},
+            { tarefa: 'no gerenciador de versões, adicionar versão futura para caputar o tempo gasto no dia', status: 'n'},
         ]
     },
 };
