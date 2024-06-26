@@ -19,6 +19,7 @@ const tarefas = {
             { tarefa: 'esconder os cards de dias que não tem nenhuma tarefa', status: 'y' },
             {tarefa: 'inserir expandir/esconder informação no card de dia e projetos'},
             { tarefa: 'no gerenciador de versões, adicionar versão futura para caputar o tempo gasto no dia', status: 'n'},
+            {tarefa: 'reconhecer data atual e modificar o btn do day para btn-success'},
         ]
     },
 };
