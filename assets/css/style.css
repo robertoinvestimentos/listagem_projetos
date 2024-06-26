@@ -54,3 +54,7 @@ header::before {
         padding: 3rem 1rem;
     }
 }
+
+.nav-item a.btn {
+    margin: 2px auto;
+}
