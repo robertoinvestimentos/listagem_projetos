@@ -83,7 +83,8 @@ function multiplicar(minutos) {
 
 function converter(minutos) {
     const horas = Math.floor(minutos / 60);
-    const minutosRestantes = minutos % 60;
+    const minutosRestantes = Math.round(minutos % 60);
     const minutosFormatados = minutosRestantes.toString().padStart(2, '0');
     return `${horas}h ${minutosFormatados}min`;
 }
+
