@@ -3,6 +3,7 @@ function exibirMensagem(mensagem) {
     messageElement.innerHTML = mensagem;
     messageElement.classList.remove('d-none');
 }
+
 function carregarDados() {
     const selectBox = document.getElementById('selectMonth');
     const selectedMonth = selectBox.value;
@@ -14,6 +15,7 @@ function carregarDados() {
         exibirMensagem(`Não existem dados do mês de <strong>${selectedMonth}</strong> para mostrar`);
     });
 }
+
 function destacarDiaAtual(row, dia) {
     const dataAtual = new Date();
     const diaAtual = dataAtual.getDate();
@@ -63,6 +65,7 @@ function processarDados(dados, mes) {
 
 document.getElementById('selectMonth').addEventListener('change', carregarDados);
 document.addEventListener('DOMContentLoaded', carregarDados);
+
 function getDiaSemana(dia) {
     const [day, month, year] = dia.split('/').map(Number);
     const data = new Date(year + 2000, month - 1, day); // Ajustando o ano para ficar completo (assumindo que estamos em 2024)
@@ -77,9 +80,10 @@ function multiplicar(minutos) {
         return 0;
     }
 }
+
 function converter(minutos) {
     const horas = Math.floor(minutos / 60);
     const minutosRestantes = minutos % 60;
-    const minutosFormatados = Math.round(minutosRestantes);
+    const minutosFormatados = minutosRestantes.toString().padStart(2, '0');
     return `${horas}h ${minutosFormatados}min`;
 }
