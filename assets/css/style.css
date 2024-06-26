@@ -104,6 +104,13 @@ tr.dia-atual td {
     background: #13554f !important;
     color: white;
 }
+.day-container {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+}
 
 .task-date {
    /* background: #9E9E9E;
@@ -116,9 +123,3 @@ tr.dia-atual td {
    color: gray;
 }
 
-.day-container {
-    margin-bottom: 20px;
-    background: white;
-    border-radius: 10px;
-    padding: 5px;
-}

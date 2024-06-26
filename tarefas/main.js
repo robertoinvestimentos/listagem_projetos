@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
             taskList.forEach(task => {
                 const taskItem = document.createElement('div');
                 taskItem.className = 'task-item';
-                taskItem.textContent = `<i class="bi bi-check2-square"></i> ${task}`;
+                taskItem.innerHTML = `<i class="bi bi-check2-square"></i> ${task}`;
                 dayContainer.appendChild(taskItem);
             });
         } else {
             const noTasks = document.createElement('div');
             noTasks.className = 'task-item';
-            noTasks.textContent = '<i class="bi bi-check2-square"></i> Nenhuma tarefa';
+            noTasks.innerHTML = '<i class="bi bi-check2-square"></i> Nenhuma tarefa';
             dayContainer.appendChild(noTasks);
         }
 

@@ -41,6 +41,7 @@ const tarefas = {
         'estelizando tarefas',
         'adicionar qual projeto está sendo trb',
         'add status de conclusão',
+        'esconder os cards de dias que não tem nenhuma tarefa',
     ],
     '27/06/24': null,
     '28/06/24': null,
