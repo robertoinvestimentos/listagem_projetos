@@ -58,3 +58,49 @@ header::before {
 .nav-item a.btn {
     margin: 2px auto;
 }
+
+.container {
+    margin-top: 50px;
+}
+.logo {
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+#selectMonth {
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+}
+
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px white solid;
+}
+.table thead th {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Texto branco */
+    border: 1px white solid;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.1); /* Cor de fundo azul claro para linhas alternadas */
+}
+.col-media {
+    background-color: #005000 !important; /* Cor de fundo verde suave */
+    color: white;
+}
+.table tbody tr {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro para todas as linhas */
+}
+.destaqueLinhas {
+   background: #00800063 !important; 
+}
+
+tr.dia-atual td {
+    background: #13554f !important;
+    color: white;
+}
