@@ -38,7 +38,9 @@ const tarefas = {
         'add menus em todas as páginas',
     ],
     '26/06/24': [
-        
+        'estelizando tarefas',
+        'adicionar qual projeto está sendo trb',
+        'add status de conclusão',
     ],
     '27/06/24': null,
     '28/06/24': null,
