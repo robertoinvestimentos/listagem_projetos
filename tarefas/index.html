@@ -41,24 +41,10 @@
 
         <select id="selectMonth" class="form-select">
             <option value="maio">Maio</option>
-            <option value="junho" selected>Junho</option>
+            <option value="tarefas_24_06" selected>Junho</option>
         </select>
-        <div id="message" class="alert alert-danger mt-4 d-none"></div>        
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Tarefas</th>
-                    </tr>
-                </thead>
-                <tbody id="taskTableBody">
-                    <!-- As linhas serão inseridas aqui pelo JavaScript -->
-                </tbody>
-            </table>
-            <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
-            
-        </div>
+        <div id="message" class="alert alert-danger mt-4 d-none"></div>
+        <div id="tasks"></div>
     </div>
 
     <!-- Importando Bootstrap JS e o seu arquivo rastreador.js -->

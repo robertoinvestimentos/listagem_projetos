@@ -1,25 +1,27 @@
-function carregarTarefas() {
-    // Carregar as tarefas do mês atual
-    const tasks = import(`../dados/tasks_${selectedMonth}.js`);
-    processarTarefas(tasks);
-}
+import { tarefas } from './tarefas/tarefas_24_06.js';
 
-function processarTarefas(tasks) {
-    const taskTableBody = document.getElementById('taskTableBody');
-    taskTableBody.innerHTML = '';
+document.addEventListener('DOMContentLoaded', () => {
+    const tasksContainer = document.getElementById('tasks');
 
-    Object.entries(tasks).forEach(([dia, tarefas]) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${dia}</td>
-            <td>${tarefas.join(', ')}</td>
-        `;
-        taskTableBody.appendChild(row);
+    Object.keys(tarefas).forEach(date => {
+        const taskList = tarefas[date];
+        const dateElement = document.createElement('div');
+        dateElement.className = 'task-date';
+        dateElement.textContent = date;
+        tasksContainer.appendChild(dateElement);
+
+        if (taskList && taskList.length > 0) {
+            taskList.forEach(task => {
+                const taskItem = document.createElement('div');
+                taskItem.className = 'task-item';
+                taskItem.textContent = `- ${task}`;
+                tasksContainer.appendChild(taskItem);
+            });
+        } else {
+            const noTasks = document.createElement('div');
+            noTasks.className = 'task-item';
+            noTasks.textContent = '- Nenhuma tarefa';
+            tasksContainer.appendChild(noTasks);
+        }
     });
-}
-
-function adicionarTarefa() {
-    // Implemente a lógica para adicionar uma nova tarefa
-}
-
-document.addEventListener('DOMContentLoaded', carregarTarefas);
+});
