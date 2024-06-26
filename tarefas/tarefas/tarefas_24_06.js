@@ -13,13 +13,13 @@ const tarefas = {
     },
     '26/06/24 - Qua': {
         'Rastreador de Tarefas': [
-            { tarefa: 'estelizando tarefas', status: 'y' },
+            { tarefa: 'estilizando tarefas', status: 'y' },
             { tarefa: 'adicionar qual projeto está sendo trb', status: 'y' },
             { tarefa: 'add status de conclusão', status: 'y' },
             { tarefa: 'esconder os cards de dias que não tem nenhuma tarefa', status: 'y' },
-            {tarefa: 'inserir expandir/esconder informação no card de dia e projetos'},
-            { tarefa: 'no gerenciador de versões, adicionar versão futura para caputar o tempo gasto no dia', status: 'n'},
-            {tarefa: 'reconhecer data atual e modificar o btn do day para btn-success'},
+            { tarefa: 'inserir expandir/esconder informação no card de dia e projetos' },
+            { tarefa: 'no gerenciador de versões, adicionar versão futura para capturar o tempo gasto no dia', status: 'n' },
+            { tarefa: 'reconhecer data atual e modificar o btn do day para btn-success' },
         ]
     },
 };
