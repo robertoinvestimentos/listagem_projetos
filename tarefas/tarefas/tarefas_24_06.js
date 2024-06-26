@@ -31,6 +31,7 @@ const tarefas = {
         'gerenciadorTarefas: resolver digito coluna tempo minutos',
         'trabalhar no gerenciador de tarefas',
         'colocar icon/logo no gerenciador de tarefas',
+        'add menu "tarefas" no index e no "rastreioTempos"',
     ],
     '26/06/24': [
         
