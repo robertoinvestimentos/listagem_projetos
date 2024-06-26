@@ -5,23 +5,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Object.keys(tarefas).forEach(date => {
         const taskList = tarefas[date];
+
+        // Cria um contêiner para o dia e suas tarefas
+        const dayContainer = document.createElement('div');
+        dayContainer.className = 'day-container';
+
         const dateElement = document.createElement('div');
         dateElement.className = 'task-date';
         dateElement.textContent = date;
-        tasksContainer.appendChild(dateElement);
+        dayContainer.appendChild(dateElement);
 
         if (taskList && taskList.length > 0) {
             taskList.forEach(task => {
                 const taskItem = document.createElement('div');
                 taskItem.className = 'task-item';
                 taskItem.textContent = `- ${task}`;
-                tasksContainer.appendChild(taskItem);
+                dayContainer.appendChild(taskItem);
             });
         } else {
             const noTasks = document.createElement('div');
             noTasks.className = 'task-item';
             noTasks.textContent = '- Nenhuma tarefa';
-            tasksContainer.appendChild(noTasks);
+            dayContainer.appendChild(noTasks);
         }
+
+        tasksContainer.appendChild(dayContainer);
     });
 });

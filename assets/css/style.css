@@ -117,3 +117,7 @@ tr.dia-atual td {
     border-radius: 5px;
     color: gray;
 }
+
+.day-container {
+    margin-bottom: 20px;
+}
