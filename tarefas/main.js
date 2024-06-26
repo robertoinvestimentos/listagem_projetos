@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Object.keys(tarefas).forEach(date => {
         const projects = tarefas[date];
+        console.log(projects);
 
         if (projects && Object.keys(projects).length > 0) {
             // Cria um contêiner para o dia e suas tarefas
