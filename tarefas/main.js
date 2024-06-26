@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const tasksContainer = document.getElementById('tasks');
 
     Object.keys(tarefas).forEach(date => {
-        const taskList = tarefas[date];
+        const projects = tarefas[date];
 
-        if (taskList && taskList.length > 0) {
+        if (projects && Object.keys(projects).length > 0) {
             // Cria um contêiner para o dia e suas tarefas
             const dayContainer = document.createElement('div');
             dayContainer.className = 'day-container';
@@ -16,11 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
             dateElement.textContent = date;
             dayContainer.appendChild(dateElement);
 
-            taskList.forEach(task => {
-                const taskItem = document.createElement('div');
-                taskItem.className = 'task-item';
-                taskItem.innerHTML = `<i class="bi bi-check2-square"></i> ${task}`;
-                dayContainer.appendChild(taskItem);
+            Object.keys(projects).forEach(project => {
+                const projectContainer = document.createElement('div');
+                projectContainer.className = 'project-container';
+
+                const projectTitle = document.createElement('div');
+                projectTitle.className = 'project-title';
+                projectTitle.textContent = project;
+                projectContainer.appendChild(projectTitle);
+
+                const taskList = projects[project];
+                taskList.forEach(taskObj => {
+                    const taskItem = document.createElement('div');
+                    taskItem.className = 'task-item';
+                    const statusIcon = taskObj.status === 'y' ? 'bi-check2-square' : 'bi-square';
+                    taskItem.innerHTML = `<i class="bi ${statusIcon}"></i> ${taskObj.tarefa}`;
+                    projectContainer.appendChild(taskItem);
+                });
+
+                dayContainer.appendChild(projectContainer);
             });
 
             tasksContainer.appendChild(dayContainer);
