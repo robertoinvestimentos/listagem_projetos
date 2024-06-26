@@ -35,6 +35,7 @@ const tarefas = {
         'estelizar btn do menu, aumentar margin-bottom',
         'btn, add cor diferente ao gerenciadorTarefa',
         'compartilhar o mesmo style com todas as páginas',
+        'add menus em todas as páginas',
     ],
     '26/06/24': [
         
