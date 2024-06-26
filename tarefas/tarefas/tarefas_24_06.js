@@ -30,6 +30,7 @@ const tarefas = {
         'resolver problema de git do "roberto_investimentos"',
         'gerenciadorTarefas: resolver digito coluna tempo minutos',
         'trabalhar no gerenciador de tarefas',
+        'colocar icon/logo no gerenciador de tarefas',
     ],
     '26/06/24': [
         
