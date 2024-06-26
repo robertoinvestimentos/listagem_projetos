@@ -32,6 +32,7 @@ const tarefas = {
         'trabalhar no gerenciador de tarefas',
         'colocar icon/logo no gerenciador de tarefas',
         'add menu "tarefas" no index e no "rastreioTempos"',
+        'estelizar btn do menu, aumentar margin-bottom'
     ],
     '26/06/24': [
         
