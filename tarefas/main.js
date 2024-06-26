@@ -3,6 +3,7 @@ import { tarefas } from './tarefas/tarefas_24_06.js';
 document.addEventListener('DOMContentLoaded', () => {
     const tasksContainer = document.getElementById('tasks');
     const today = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: '2-digit' });
+    console.log(today);
 
     Object.keys(tarefas).forEach(date => {
         const projects = tarefas[date];
@@ -19,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 dateElement.classList.remove('btn-secondary');
                 dateElement.classList.add('btn-success');
             }
+            dateElement.addEventListener('click', () => {
+                collapseElement.classList.toggle('show');
+            });
 
             const collapseElement = document.createElement('div');
             collapseElement.className = 'accordion-collapse collapse show'; // Adiciona 'show' para exibir por padrão
@@ -36,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectTitle.className = 'project-title accordion-header';
                 projectTitle.textContent = project;
                 projectContainer.appendChild(projectTitle);
+                projectTitle.addEventListener('click', () => {
+                    projectCollapse.classList.toggle('show');
+                });
 
                 const projectCollapse = document.createElement('div');
                 projectCollapse.className = 'accordion-collapse collapse show'; // Adiciona 'show' para exibir por padrão
@@ -61,3 +68,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
