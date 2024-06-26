@@ -38,3 +38,8 @@
 .destaqueLinhas {
    background: #00800063 !important; 
 }
+
+tr.dia-atual td {
+    background: #13554f !important;
+    color: white;
+}

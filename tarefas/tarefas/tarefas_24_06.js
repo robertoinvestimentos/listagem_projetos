@@ -28,7 +28,7 @@ const tarefas = {
     '25/06/24': [
         'reunião com seu Roberto',
         'resolver problema de git do "roberto_investimentos"',
-        '',
+        'gerenciadorTarefas: resolver digito coluna tempo minutos',
         'trabalhar no gerenciador de tarefas',
     ],
     '26/06/24': [
