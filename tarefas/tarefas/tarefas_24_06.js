@@ -1,17 +1,17 @@
 const tarefas = {
-    '25/06/24': {
+    '25/06/24 - Ter': {
         'Reunião': [
             { tarefa: 'reunião com seu Roberto', status: 'y' },
         ],
         'RobertoInvestimentos - Gerenciador de Projetos': [
             { tarefa: 'resolver problema de git do "roberto_investimentos"', status: 'y' }
         ],
-        'Projeto B': [
-            { tarefa: 'gerenciadorTarefas: resolver digito coluna tempo minutos', status: 'y' },
-            { tarefa: 'trabalhar no gerenciador de tarefas', status: 'n' }
+        'Rastreador de Tarefas': [
+            { tarefa: 'resolver digito coluna tempo minutos', status: 'y' },
+            { tarefa: 'desenvolvimento do algorítmo do rastreador', status: 'y' }
         ]
     },
-    '26/06/24': {
+    '26/06/24 - Qua': {
         'Projeto C': [
             { tarefa: 'estelizando tarefas', status: 'n' },
             { tarefa: 'adicionar qual projeto está sendo trb', status: 'n' }
