@@ -12,8 +12,8 @@ _______
   - [x] remover projects/* tarefas/ e tempo/ pois agora vou focar somente e diretamente no github dos projetos;
   - [x] Remoção das barras de progresso dos projetos para melhorar o desempenho.
   - [x] Remoção das versões dos projetos.
-  - [ ] Adição de links para os repositórios GitHub dos projetos.
-  - [ ] add do próprio projeto do robertoinvestimentos.netlify.app
+  - [x] Adição de links para os repositórios GitHub dos projetos.
+  - [x] add do próprio projeto do robertoinvestimentos.netlify.app
   
 #### Objetivo
 A versão 0.7 tem como objetivo simplificar a página e melhorar o desempenho ao reduzir a quantidade de informações carregadas. As barras de progresso e subversões foram removidas, e agora os detalhes dos projetos podem ser encontrados diretamente no GitHub.
