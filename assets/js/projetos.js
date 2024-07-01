@@ -42,9 +42,9 @@ export const projects = [
         image: "/assets/imgs/projetos/atualizacao_loterias_caixa.jpg"
     },
     {
-        title: "Roberto Investimentos",
+        title: "Listagem de Projetos",
         description: "<strong>Roberto Investimentos</strong> é um projeto de uma página web simples para visualizar os projetos em andamento. Este repositório contém todas as versões do projeto, incluindo as versões anteriores e as mais recentes.",
-        link: "https://github.com/andresilvacosta1992/roberto_investimentos",
+        link: "https://github.com/robertoinvestimentos/listagem_projetos",
         image: "/assets/imgs/background.jpg"
     },
     
