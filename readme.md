@@ -9,8 +9,8 @@ _______
 - **Data de Lançamento:** 2024-07-01
 - **Mudanças Principais:**
   - [x] remover scripts automaticos (up.sh / upAuto.sh) e focar em commits manuais e esclarecedores;
-  - [ ] remover projects/* tarefas/ e tempo/ pois agora vou focar somente e diretamente no github dos projetos;
-  - [ ] Remoção das barras de progresso dos projetos para melhorar o desempenho.
+  - [x] remover projects/* tarefas/ e tempo/ pois agora vou focar somente e diretamente no github dos projetos;
+  - [x] Remoção das barras de progresso dos projetos para melhorar o desempenho.
   - [ ] Remoção das subversões dos projetos.
   - [ ] Adição de links para os repositórios GitHub dos projetos.
   - [ ] add do próprio projeto do robertoinvestimentos.netlify.app
