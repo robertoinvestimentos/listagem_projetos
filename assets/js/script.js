@@ -14,7 +14,7 @@ function renderProjects() {
             <div class="card-body">
                 <h2 class="card-title">${project.title}</h2>
                 <p class="card-text">${project.description}</p>
-                <a href="${project.link}" class="btn btn-primary">Detalhes do Projeto</a>
+                <a href="${project.link}" class="btn btn-primary"><i class="bi bi-github"></i> Repositório Github</a>
             </div>
         `;
 
