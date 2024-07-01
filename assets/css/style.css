@@ -131,3 +131,15 @@ tr.dia-atual td {
     color: gray;
 }
 
+.accordion-body {
+    padding: 1px 10px;
+}
+
+h5.project-title.accordion-header {
+    cursor: pointer;
+}
+
+#menuCollapse {
+    margin: 20px;
+    text-align: center;
+}
