@@ -1,8 +1,8 @@
 export const projects = [
     {
-        title: "Loto Rede Social",
+        title: "Loto Social",
         description: "A proposta da <strong>Loto - Rede Social</strong> integrada ao site <a href='https://lotodicas.com.br/'>LotoDicas</a> é proporcionar aos usuários um ambiente de interação especializado em apostas, centrado em um chat intuitivo. Com funcionalidades de login e senha, os usuários podem se cadastrar em grupos de conversas específicas, criando uma comunidade envolvente e focada no compartilhamento de estratégias e dicas relacionadas ao campo de apostas. Essa plataforma busca unir entusiastas da loteria, proporcionando um espaço colaborativo para discutir estratégias, trocar experiências e fortalecer a comunidade de jogadores.",
-        link: "https://github.com/andresilvacosta1992/redesocialloto",
+        link: "https://github.com/robertoinvestimentos/lotosocial",
         image: "/assets/imgs/projetos/lotosocial.jpg"
     },
     {
