@@ -14,7 +14,9 @@ function renderProjects() {
             <div class="card-body">
                 <h2 class="card-title">${project.title}</h2>
                 <p class="card-text">${project.description}</p>
-                <a href="${project.link}" class="btn btn-primary"><i class="bi bi-github"></i> Repositório Github</a>
+                <a href="${project.link}" class="btn btn-primary"><i class="bi bi-github"></i> 
+                Repositório Github</a>
+                <a href="${project.link}" class="btn btn-${project.visibility == "privado" ? "danger" : "success"}"><i class="bi bi-${project.visibility == "privado" ? "lock" : "unlock"}"></i> ${project.visibility} </a>
             </div>
         `;
 
