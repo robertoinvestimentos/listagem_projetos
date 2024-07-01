@@ -8,6 +8,7 @@ _______
 ### Versão 0.7
 - **Data de Lançamento:** 2024-07-01
 - **Mudanças Principais:**
+  - [x] remover scripts automaticos (up.sh / upAuto.sh) e focar em commits manuais e esclarecedores;
   - [ ] Remoção das barras de progresso dos projetos para melhorar o desempenho.
   - [ ] Remoção das subversões dos projetos.
   - [ ] Adição de links para os repositórios GitHub dos projetos.
